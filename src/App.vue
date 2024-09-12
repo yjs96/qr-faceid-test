@@ -213,14 +213,24 @@ const onTouchMove = (e) => {
 
 const onTouchEnd = () => {
   if (pullDistance.value > threshold) {
+    refreshRandomNumber(); // 새로고침 시 랜덤 숫자 업데이트
     emit('refresh');
   }
   pullDistance.value = 0;
 };
 
+const randomNumber = ref(Math.floor(Math.random() * 1000)); // 초기 랜덤 숫자
+
+const refreshRandomNumber = () => {
+  randomNumber.value = Math.floor(Math.random() * 1000);
+};
+
 </script>
 
 <template>
+  <div>
+    {{ randomNumber }}
+  </div>
     <div
     class="pull-to-refresh"
     @touchstart="onTouchStart"
