@@ -281,14 +281,14 @@ const onTouchEnd = () => {
     </p>
 
     <div>
-      <qrcode-stream
+      <!-- <qrcode-stream
         :constraints="selectedConstraints"
         :track="trackFunctionSelected.value"
         :formats="selectedBarcodeFormats"
         @error="onError"
         @detect="onDetect"
         @camera-on="onCameraReady"
-      />
+      /> -->
     </div>
   </div>
 </template>
