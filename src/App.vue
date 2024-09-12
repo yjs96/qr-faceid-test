@@ -196,7 +196,7 @@ function onError(err) {
   }
 }
 
-const threshold = 60; // 새로고침을 트리거하는 당김 거리 (픽셀)
+const threshold = 150; // 새로고침을 트리거하는 당김 거리 (픽셀)
 const pullDistance = ref(0);
 const startY = ref(0);
 
