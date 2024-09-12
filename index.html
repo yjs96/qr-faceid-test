@@ -3,8 +3,54 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
+    <link rel="manifest" href="/manifest.json" />
+    <!-- 입력 터치시 화면 확대, 사용자 임의 화면 확대, 번역 추천 방지 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      translate="no"
+    />
+    <meta name="theme-color" content="#f6f7f6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- 카카오, 슬랙 등 공유 시 표시되는 정보 -->
+    <meta property="og:title" content="돈이오조" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ifh.cc/g/hZmnsQ.png" />
+    <meta property="og:description" content="한 눈에 보이는 나의 소비 리포트" />
+    
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/icons/icon-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="/icons/icon-256x256.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="/icons/icon-384x384.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/icons/icon-512x512.png"
+    />
+    <link
+      rel="manifest"
+      href="/app/manifest.json"
+      crossorigin="use-credentials"
+    />
   </head>
   <body>
     <div id="app"></div>
